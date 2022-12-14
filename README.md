@@ -20,7 +20,7 @@ cryptosystems in practical terms. they cover the same material but in different 
 * cryptography engineering: schneier
 * real world cryptography: wong
 * crypto101: lvh
-* coursera crypto and a graduate course in applied cryptography: dan boneh
+* a graduate course in applied cryptography (and coursera cryptography class): dan boneh
 * cryptopals exercises
 * cryptohack
 
