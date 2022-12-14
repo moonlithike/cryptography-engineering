@@ -21,11 +21,15 @@ cryptosystems in practical terms. they cover the same material but in different 
 * real world cryptography: wong
 * crypto101: lvh
 * a graduate course in applied cryptography (and coursera cryptography class): dan boneh
-* cryptopals exercises
-* cryptohack
 
 ### cryptography mathematics
 these resources have been helpful in understanding the mathematical terrain of the 
 primitives discussed above.
 * handbook of applied cryptography
 * an introduction to mathematical cryptography
+
+## courses of study
+* [uncloak](uncloak/)
+* cryptography I
+* cryptopals
+* cryptohack
