@@ -65,5 +65,8 @@ confidentiality (ciphers), authentication, and integrity (hashes and MACs).
 
 2. You're the adversary, watching a TLS handshake. Pick three steps from [TLS Handshake - OSDev Wiki](https://wiki.osdev.org/TLS_Handshake#Handshake_Overview), and describe how the step prevents you from (pick one):
    1. reading message content (confidentiality)
+       - client and server exchange keys to establish a shared secret for encrypting traffic 
    2. tampering with message content (integrity)
+       - at the end of the handshake, parties exchange an authentication tag of their exchanges to confirm that there was no tampering of their communication
    3. impersonating either party (authenticity)
+       - server sends its certificate and client confirms that it's signed by a CA 
