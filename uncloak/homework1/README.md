@@ -3,7 +3,7 @@
 [session 1 notes](https://uncloak.org/courses/rust+cryptography+engineering/course-2022-11-18+Session+1+Notes)
 
 ### resources
-* cryptography engieering, chapter 1 & 2
+* cryptography engineering, chapter 1 & 2
 
 
 ### exercises

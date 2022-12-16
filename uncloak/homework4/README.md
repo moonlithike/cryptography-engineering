@@ -28,7 +28,7 @@ confidentiality (ciphers), authentication, and integrity (hashes and MACs).
   - [Should we MAC-then-encrypt or encrypt-then-MAC?](https://crypto.stackexchange.com/questions/202/should-we-mac-then-encrypt-or-encrypt-then-mac)
   - [The Cryptographic Doom Principle](https://moxie.org/2011/12/13/the-cryptographic-doom-principle.html)
 
-## Exercises
+### Exercises
 1. Justify or disqualify each of the following schemes, with message $m$, tag $t$, and ciphertext $c$. 
    1. $t=MAC(m)\quad c=E(m)$, send $(c,t)$
       - aka encrypt and mac

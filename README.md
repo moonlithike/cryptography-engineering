@@ -1,6 +1,6 @@
 # cryptography-engineering
 
-this repository will track my cryptography engineering self study. 
+this repository will track my cryptography engineering self study.
 i hope my work here will help others on the same path.
 
 my background is that i'm a senior backend engineer and my goal is to become an 
@@ -27,6 +27,7 @@ these resources have been helpful in understanding the mathematical terrain of t
 primitives discussed above.
 * handbook of applied cryptography
 * an introduction to mathematical cryptography
+* a graduate course in applied cryptography, appendix
 
 ## courses of study
 * [uncloak](uncloak/)

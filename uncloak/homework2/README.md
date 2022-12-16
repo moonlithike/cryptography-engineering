@@ -1,4 +1,12 @@
-# Exercises
+# block ciphers and block cipher modes
+
+### resources
+* cryptography engineering, chapter 3 & 4
+* a graduate course in applied cryptography, chapter 4
+* crypto101, chapter 6 & 7
+
+
+### exercises
 This week's has a base set of exercises, and an extended exercise set for those who would like more practice.
 
 ## Chapter 3 (p. 61)
