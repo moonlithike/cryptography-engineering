@@ -1,3 +1,14 @@
+// $ cargo run
+// enter the text you would like to encrypt
+// tothemoonandbeyond
+// enter the key
+// moonlight
+// your ciphertext is: fchupuuvgmbropguuw
+// now enter a key to decrypt the ciphertext:
+// moonlight
+// your decrypted text is: tothemoonandbeyond
+
+
 use std::io;
 
 fn main() {
@@ -29,7 +40,7 @@ fn main() {
 fn encrypt(plaintext: String, key: String) -> String {
     let mut ciphertext = String::new();
     let key_chars: Vec<_> = key.chars().collect();
-    println!("{:?}", key_chars);
+
     for (i, c) in plaintext.chars().enumerate() {
         // cast characters into ascii integer values and back
         // use remainder op (%) to select index from key vector and wrap around alphabet
