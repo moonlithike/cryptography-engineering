@@ -33,11 +33,17 @@ Ch 2:
   - 256
 
 General:
-- Find two libraries for each of RSA, TLS/SSL, and AEAD. Evaluate the maturity each library, and skim the code. What about the library structure makes sense? How is their documentation? These links may help:
-    - https://cryptography.rs/
-    - https://lib.rs/ (librs is equivalent to crates.io, with a different interface)
+- Find two libraries for each of RSA, TLS/SSL, and AEAD. Evaluate the maturity each library, and skim the code. What about the library structure makes sense? How is their documentation? 
+
+  - RSA: [rsa](https://github.com/RustCrypto/RSA), [play-rsa](https://github.com/getreu/play-rsa/)
+  - TLS/SSL:
+  - AEAD:
 - Benchmark the speed of an algorithm in the two different implementations with [Criterion](https://lib.rs/crates/criterion).
     - User guide: https://bheisler.github.io/criterion.rs/book/index.html
     - Video intro: https://youtu.be/eIB3Pd5LBkc
 - Implement the [Vignère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) in 100 lines or less.
 - What is a side channel attack? Is your cipher implementation constant time?
+
+- These links may help:
+    - https://cryptography.rs/
+    - https://lib.rs/ (librs is equivalent to crates.io, with a different interface)
