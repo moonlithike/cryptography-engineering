@@ -8,7 +8,6 @@
 // moonlight
 // your decrypted text is: tothemoonandbeyond
 
-
 use std::io;
 
 fn main() {
@@ -22,7 +21,6 @@ fn main() {
     io::stdin().read_line(&mut enc_key).unwrap();
     enc_key.pop();
 
-
     let ciphertext = encrypt(plaintext, enc_key);
 
     println!("your ciphertext is: {}", ciphertext);
@@ -33,8 +31,6 @@ fn main() {
     dec_key.pop();
 
     println!("your decrypted text is: {}", decrypt(ciphertext, dec_key));
-
-
 }
 
 fn encrypt(plaintext: String, key: String) -> String {
@@ -44,9 +40,8 @@ fn encrypt(plaintext: String, key: String) -> String {
     for (i, c) in plaintext.chars().enumerate() {
         // cast characters into ascii integer values and back
         // use remainder op (%) to select index from key vector and wrap around alphabet
-        ciphertext.push(
-            ((c as u8 - 97 + key_chars[i % key_chars.len()] as u8 - 97) % 26 + 97 ) as char
-        );
+        ciphertext
+            .push(((c as u8 - 97 + key_chars[i % key_chars.len()] as u8 - 97) % 26 + 97) as char);
     }
     ciphertext
 }
@@ -58,8 +53,9 @@ fn decrypt(ciphertext: String, key: String) -> String {
     for (i, c) in ciphertext.chars().enumerate() {
         // same as above, but use remainder op to perform negative module to reverse op:
         //     ((a % b) + b) % b)
-       plaintext.push(
-            (((((c as u8 as i8 - key_chars[i % key_chars.len()] as u8 as i8) % 26) + 26 ) % 26) + 97 ) as u8 as char
+        plaintext.push(
+            (((((c as u8 as i8 - key_chars[i % key_chars.len()] as u8 as i8) % 26) + 26) % 26) + 97)
+                as u8 as char,
         );
     }
     plaintext
@@ -80,7 +76,10 @@ mod tests {
             String::from("yyyyy")
         );
         assert_eq!(
-            encrypt(String::from("asjkasjsakkjflaoepqcnvcmzbv"), String::from("keyy")),
+            encrypt(
+                String::from("asjkasjsakkjflaoepqcnvcmzbv"),
+                String::from("keyy")
+            ),
             String::from("kwhikwhqkoihppymotoaxzakjft")
         );
     }
@@ -96,7 +95,10 @@ mod tests {
             String::from("zzzzz")
         );
         assert_eq!(
-            decrypt(String::from("kwhikwhqkoihppymotoaxzakjft"), String::from("keyy")),
+            decrypt(
+                String::from("kwhikwhqkoihppymotoaxzakjft"),
+                String::from("keyy")
+            ),
             String::from("asjkasjsakkjflaoepqcnvcmzbv")
         );
     }
